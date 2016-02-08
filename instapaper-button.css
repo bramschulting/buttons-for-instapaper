@@ -1,0 +1,43 @@
+.instapaper-buttons.buttons-container {
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.instapaper-buttons .btn {
+  color: #c8c8c8;
+  transition: color .2s ease-out;
+}
+
+.instapaper-buttons .btn:active {
+  box-shadow: none;
+}
+
+.instapaper-buttons .btn:before {
+  width: 60px;
+  height: 60px;
+  display: block;
+  content: " ";
+  margin-bottom: 10px;
+  transition: opacity .2s ease-out;
+}
+
+.instapaper-buttons .btn.btn-archive:before {
+  background: url("chrome-extension://__MSG_@@extension_id__/img/drawer.svg");
+}
+
+.instapaper-buttons .btn.btn-like:before {
+  background: url("chrome-extension://__MSG_@@extension_id__/img/heart-off.svg");
+}
+
+.instapaper-buttons .btn.btn-like.liked:before {
+  background: url("chrome-extension://__MSG_@@extension_id__/img/heart-on.svg");
+}
+
+.instapaper-buttons .btn.btn-archive:before,
+.instapaper-buttons .btn.btn-like:before,
+.instapaper-buttons .btn.btn-like.liked:before {
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

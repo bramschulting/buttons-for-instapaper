@@ -1,0 +1,20 @@
+{
+  "name": "Buttons for Instapaper",
+  "version": "1.0.0",
+  "description": "Adds a favorite and an archive button at the bottom of each article in Instapaper.",
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["https://*.instapaper.com/read/*"],
+      "js": ["instapaper-button.js"],
+      "css": ["instapaper-button.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    "img/*.svg"
+  ],
+  "icons": {
+    "512": "icon.png"
+  },
+  "manifest_version" : 2
+}
