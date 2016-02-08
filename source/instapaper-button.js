@@ -66,7 +66,3 @@ var itemContainer = document.querySelector('.container main');
 var itemFooter = itemContainer.querySelector('footer');
 
 itemContainer.insertBefore(buttonsContainer, itemFooter.nextSibiling);
-
-
-// TODO
-// - Aria
