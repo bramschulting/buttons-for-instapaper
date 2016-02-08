@@ -8,3 +8,5 @@ This extension adds a favorite and an archive button at the bottom of each artic
 2. Go to `chrome://extensions`
 3. Drag the `.crx` file into the window
 4. Profit
+
+![Screenshot of the extension in action](screenshot.png)
